@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from 'components/Header';
+import Header from 'components/Header.jsx';
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -9,6 +9,7 @@ class App extends React.Component {
         super();
 
         this.state = {
+            title: "Main Title",
             menu: [
                 {title: 'Main', href: '/'},
                 {title: 'About', href: '/about'},
@@ -21,7 +22,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header />
+                <Header state={this.state} />
             </div>
         )
     }

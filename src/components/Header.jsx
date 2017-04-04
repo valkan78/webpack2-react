@@ -3,11 +3,13 @@ import React from 'react';
 ////////////////////////////////////////////////////////////////////////////////
 
 class Header extends React.Component {
+
     render() {
         return(
             <nav>
-                <li>item1</li>
-                <li>item2</li>
+                {this.props.state.menu.map(item => {
+                    return <li><a href="{ item.href }">{ item.title }</a></li>
+                })}
             </nav>
         );
     }

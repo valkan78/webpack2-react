@@ -1,7 +1,5 @@
-
 /*
-    ROOT
-    index.js
+    ROOT index.js
  */
 
 import React from 'react';
